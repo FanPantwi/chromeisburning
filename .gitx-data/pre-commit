@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# git pre-commit hook for dual-repo (ie gitx)
+# this doesn't appear to run on externally-generated commits, ie pulls, merges or fast-forwards
+# (which is good)
+# so the file stores the parent hash as of the last time the dual-repo was synced
+
+file=.gitx-data/takashi-head
+git --git-dir=.git rev-parse HEAD > $file
+git add -f $file
+
+
+

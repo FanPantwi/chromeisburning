@@ -1,0 +1,56 @@
+all original portions of this extension are copyright 2015 chromeisburning.com
+    all rights reserved unless otherwise noted
+    some portions are external and sources are referenced below (used under liberal licenses)
+    other portions are used under license
+    html files in /app and text files in the toplevel are offered under the MIT license
+
+
+Security:
+    facebook is only accessed to get the oauth token, which is only used to authenticate with tinder
+        as of version 0.99.13
+        future versions may also access facebook to display the "connections" that the tinder
+            app displays
+    some releases of this software are mangled
+    the portions that communicate with tinder and facebook are left un-mangled so they can be inspected
+    originally the portion that manipulates data was mangled using uglify.js
+        this was to discourage abuse of the tinder api
+        but tinder tolerates 6tin and flamite, so this mangling has been dropped
+        please use this tool responsibly (ie tinder may block you if you don't)
+
+
+Atributions:
+        the profile pics for the webstore screenshots are all CC-2.0 licensed
+        none of the authors or models are associated with my extension in any way
+
+    https://commons.wikimedia.org/wiki/File:Hilton,_Paris_(2007).jpg
+        http://www.flickr.com/people/44159829@N00
+    https://commons.wikimedia.org/wiki/File:Miley_Cyrus_on_2015_Rock_and_Roll_Hall_of_Fame_Induction_Ceremony_(cropped).jpg
+        http://www.flickr.com/photos/onetwothreefourfive/
+    https://commons.wikimedia.org/wiki/File:Olivia_Wilde_at_2011_Tribeca_Film_Festival.jpg
+        http://www.flickr.com/people/51761894@N00
+    https://commons.wikimedia.org/wiki/File:Morgan_Brian_England_Women%27s_Vs_USA_(16365778038)_(cropped).jpg
+        https://www.flickr.com/people/109430286@N06
+    nicole miller: https://www.flickr.com/photos/33896944@N03/8281768343/
+    maegan tintari: https://www.flickr.com/photos/lovemaegan/4373215187
+    Kuriyama Chiaki: https://www.flickr.com/photos/31029865@N06/15369674590
+
+    logo: https://pixabay.com/en/flames-inflamed-fire-344992 - public domain
+    facebook.js: github.com/MrPing/Botinder (MIT)
+
+
+
+licenses:
+    app/fonts/Roboto-Light.ttf - apache2, http://www.fontsquirrel.com/fonts/list/foundry/christian-robertson
+    dojo        - modified BSD
+    jquery      - MIT
+    momentjs    - MIT
+    lightbox icons: MIT, from https://github.com/lokesh/lightbox2/tree/master/dist/images
+
+
+
+todo:
+    several javascript files in /app/js are not offered under a liberal license, ie all rights reserved
+    remove the portions specific to moments (which tinder no longer offers) and relicense under MIT
+
+stuff
+

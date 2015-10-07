@@ -1,0 +1,363 @@
+/** @license copyright 2015 xmondox + chromeisburning.com, all rights reserved */
+/** @license this file is licensed under the MIT license to any recipient */
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+
+
+
+
+.container-middle {
+    margin: 3em 1em 5em 1em;
+    font-size: medium;
+}
+
+
+.blurbDiv {
+    margin: 0 10%;
+    padding: .5em;
+    background: #ffeeee;
+    border-radius: .5em;
+}
+.msgSelf, .msgOther {
+    max-width: 70%;
+    clear: both;
+    margin: 3px;
+    padding: 5px 10px 5px 10px;
+}
+
+.msgOther {
+    position: relative;
+    float: left;
+    margin-right: auto;
+    background: #e7e6ec;
+    border-radius: 0 .5em .5em .5em;
+}
+
+div.msgOther > img { height: 14em; }
+
+.msgSelf {
+    position: relative;
+    float: right;
+    margin-left: auto;
+    text-align: right;
+    background: #2a8cfc;
+    color: white;
+    border-radius: .5em 0 .5em .5em;
+}
+
+.msgTime {
+    clear: both;
+    font-size: smaller;
+    text-align: center;
+    color: grey;
+    padding: 8px 0 0 0;
+}
+
+.sendDiv {
+    clear: both;
+    width: 100%;
+    padding: 1em 0;
+}
+.sendDiv > textarea {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    margin: 3px 0;
+    border-radius: .5em 0 .5em .5em;
+    border-style: solid;
+    min-height: 8em;
+}
+.sendDiv button {
+    padding: 5px 10px 5px 10px;
+    margin: 3px 0;
+    position: relative;
+    float: right;
+}
+
+.sendDiv hr {
+    border: 2px solid lightgrey;
+}
+
+.msgDiv {
+    float: left;
+    padding: 0 .5em .5em 0;
+    margin: 0 .5em .5em 0;
+    max-width: 40em;
+    min-height: 10em;
+}
+.msgPlaceholder {
+    height: 0;
+    visibility: hidden;
+}
+
+
+.distSpan {
+    width: 16em;
+    padding: 0 1em 0 0;
+    font-weight: bold;
+}
+.lastSpan {
+    padding: 0 1em 0 0;
+}
+
+.listDiv {
+    max-width: 900px;
+}
+
+.listDiv > table {
+    border: 2px solid lightgrey;
+}
+
+.listDiv .listSelect  { border-width:1px; }
+.listSelect > td.listToon { border-bottom: 1px solid lightgrey; }
+td.listToon { padding-right: 16px; border-bottom: 1px solid transparent; }
+
+td.listInfo { width: 25%; border-bottom: 1px solid lightgrey; padding: 4px; }
+td.listDist { width: 17%; border-bottom: 1px solid lightgrey; padding: 4px; }
+td.listBio  {             border-bottom: 1px solid lightgrey; padding: 4px; }
+
+
+div.listPic {
+    border-radius: 50%;
+    margin: 4px;
+    height: 8em;
+    width: 8em;
+    padding: 0;
+    border: 4px solid transparent;
+    overflow: hidden;
+}
+div.listPic > img {
+    margin: 0;
+    padding: 0;
+    border:0;
+    height:100%;
+}
+
+.matchDate { font-size:smaller }
+
+.picDiv img {
+    float: left;
+}
+
+body.disable {
+    max-width: 900px;
+}
+body {
+    font-family: 'Roboto-Light';
+}
+
+/* all the alert style things are double selectivity to allow easier application */
+
+.alertx.alertx.alertx  { background-color:#e35c35; color:black }
+.alertz.alertz         { color:#e35c35; }
+.alert.alert           { border-color:#e35c35; border-style:solid  }
+.pending.pending       { border-color:#e3e335; border-style:dashed }
+.liking.liking         { border-color:#5ce335; border-style:solid  }
+.failing.failing       { border-color:red;     border-style:dotted }
+.listSelect.listSelect { border-color:lightblue; border-style:solid; background:lightblue }
+
+
+
+
+div.listPic > img.alert { border: .25em solid #e35c35; }
+
+
+
+
+div.mymoDiv > div { display: inline-block; }
+div.mymoDiv > div > div { padding: 1em; margin:1em 0 1em 0; border: 1px none; border-radius: 1em; display:inline-block; }
+div.mymoDiv > div > div > img.alert { border: .25em solid #e35c35; }
+div.mymoDiv > div > div > img { width: 16em; display: block; border: .25em solid transparent; border-radius: 1em; }
+div.mymoDiv > div > div > div             { float: left; }
+div.mymoDiv > div > div > div.likes_count { float: right; }
+
+div.mymoDetails { overflow:auto }
+div.mymoDetails > p { margin:1em; display:inline-block }
+div.mymoDetails > div { overflow:auto }
+div.mymoDetails > div > div { margin:1em }
+
+div.grid { display:inline-block; vertical-align:top; float:left; }
+div.grid.clear { clear:left; }
+.left { float: left; margin: 0 0 0 1em; }
+.right { float: right; margin: 0 1em 0 0; }
+.caption { position:relative; margin-top:-1.125em; height:1em; background:rgba(255,255,255,.5); }
+
+
+div.feedDiv > div { display:inline-block; vertical-align:bottom; border:0 }
+div.feedDiv > div > div { margin:1em; border-radius:.5em; display:inline-block; width:12em; height:23em; position:relative; background-color:grey;}
+div.feedDiv > div > div > img { display:block; margin:1em 0; padding:0; border:0; position:absolute; bottom:0; width:100%; }
+div.feedDiv > div > div > div { position:absolute; bottom:0; color:white; margin:0 }
+div.feedDiv > div > div > div.right { right:0 }
+
+.feedBlurb { font-size:smaller }
+.feedimg { background-color:grey; border-width:.25em; border-style:solid; overflow:hidden }
+.mymoDetails .feedimg { border-radius:1em; display:inline-block }
+.convoDiv .feedimg { border-radius:.5em; height:14em }
+.fakeimage { height: 14em;width: 8.5em;}
+.fakeimage > p { font-size: 2em; padding:.5em }
+.fakedetail { width:18em; height:28em }
+.fakedetail > p { font-size:3em; padding:.75em }
+
+.gridhead { margin:1em }
+.sideright { overflow:hidden }
+
+.container-top {
+    border-bottom: 1px solid black;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    z-index: 100;
+}
+
+.container-top > div { display:inline-block; }
+.container-top > div > div { margin:.2em .5em 0; display:inline-block; cursor:pointer; }
+.container-top > div > div        { border-bottom:.25em solid transparent; }
+.container-top > div > div.active { border-bottom:.25em solid blue; }
+.container-top > div > div > span { display:inline-block; }
+.container-top span.headify::first-letter { font-size:1.5em; }
+.container-top span.headify2::first-letter { font-size:1.5em; margin:0 -.15em; }
+.container-top span.headify3::first-letter { font-size:1.5em; margin:0 -.10em 0 -.02em; }
+.container-top span.headify4 { font-size:1.5em; margin:0 -.10em 0 -.02em; }
+.container-top .headify5 { font-size:1.25em; margin-left:1em; }
+.container-top .red      { color:red; }
+.container-top > div > div > span > div.active { border-bottom:.25em solid blue; }
+.container-top .headify5.qalert { background-color:#bbbbbb; }
+
+.container-top > div.tools7 { position:absolute; bottom:0; right:0 }
+.container-top > div.tools7 .greyTool { color:grey; }
+#autopauser { font-size:1.5em; margin:0 0 0 .5em; border:0 } /* use border to force smaller than headers */
+
+
+#overlay {
+    visibility: visible;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.7);
+}
+
+#overlay > div {
+    width:300px;
+    margin: 100px auto;
+    background-color: #fff;
+    border:2px solid #000;
+    padding:15px;
+    text-align:center;
+}
+
+#overlay p { font-size:2em; }
+#overlay button {
+    padding: .5em 1em;
+    margin: 0 .5em;
+    border:2px solid transparent;
+    border-radius: .3em;
+    cursor:pointer;
+}
+#overlay button:focus { outline:none; font-weight:bold; border:2px solid blue; }
+
+
+/* total height of sonar, 1.5em max + 2*.2em border + 2*.05em margin --> 2em */
+.container-top > div > div.sonar { border:0; margin:.05em 1em }
+.container-top > div > div.sonar > div {
+    border-radius:50%;
+    border: .2em solid black;
+    animation: sonarify 2.0s steps(4) 0s infinite;
+    background-color: lightgrey;
+    display: inline-block;
+    vertical-align: -.5em; /* kludge ??? */
+    margin-right: 1em
+}
+
+@keyframes sonarify {
+    0% {
+        margin: .5em 1em .5em 1.5em;
+        height: .5em;
+        width: .5em
+    }
+    75%, 100% {
+        margin: 0 .5em 0 1em;
+        height: 1.5em;
+        width: 1.5em
+    }
+}
+
+
+.hidden { visibility: hidden }
+
+
+.helpblurb { margin:auto; width:30em; padding-top:1em; border-bottom:1px solid lightgrey; }
+.shortcuts > div { margin:1em 1em 0 1em; border:0; padding:0 1em; width:20em; min-height:20em }
+.shortcuts > div > ul:not(.autoup) {
+    margin:0 0 .2em 2em;
+    padding:0;
+    list-style-type: none;
+    text-indent: -1em;
+}
+.shortcuts > div > h2 { margin:0 0 .3em 0; padding:0 }
+.shortcuts > div > h3 { margin:.2em 0; padding:0 }
+td.keycombo { padding:.2em }
+td.keycolon { padding:0 .2em; font-size:smaller; color:silver; }
+td.keycombo > span {
+    min-width:1em;
+    background-color: whitesmoke;
+    border: 1px solid silver;
+    color: #333;
+    font-size: .6875em;
+    line-height: 1.4;
+    text-shadow: 0 1px 0 white;
+    font-family: Arial,Helvetica,sans-serif;
+    display: inline-block;
+    padding: 0.1em 0.6em;
+    margin: 0 0.1em;
+    white-space: nowrap;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px white inset;
+    border-radius: .1875em;
+}
+
+
+.lightbox {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    padding-top: 2%;
+}
+
+.lightbox > img { position: relative; }
+.lightbox > div { padding:0; position:relative; display:inline-block }
+.lightbox > div > a { position:absolute; width:30%; height:100%; background:transparent }
+.lbprev { left:0 }
+.lbnext { right:0 }
+.lbprev:hover { background: url('../../icons/prev.png') left 48% no-repeat; left:0 }
+.lbnext:hover { background: url('../../icons/next.png') right 48% no-repeat; right:0 }
+a.lbexit:hover { background-image: url('../../icons/close.png'); }
+
+.lbhide { display:none; }
+
+
+.settings { max-width:15em; margin:20vh auto 0 30vw; position:relative }
+.settings input[type=number] { width:3em; }
+.settings > span { position:absolute; right:0 }
+.settings > span > span { margin:0 .25em; }
+
+.settings table { width:100% }
+.settings table td { float:right; padding:.2em 0 }
+.settings table td>span { float:right; margin-left:1em }
+.settings table button { margin-left:1em }
+
+/* force page to require scrollbars, which makes number input boxes accept mousewheel++ */
+.spacer100 { position:absolute; height:100.1vh; visibility:hidden; width:1px; top:0 }
+
+:focus { outline:.25em solid lightblue }
+
